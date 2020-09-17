@@ -1,0 +1,207 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+:root {
+    --color-white: #fff;
+    --color-light-blue: #9da9f5;
+    --color-blue: #4f68c4;
+    --color-light-black: #282a36;
+    --color-black: #11131f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #282a36;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
+}
+
+header {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--color-black);
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover {
+    color: #9da9f5;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.links {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    background-color: royalblue;
+    background: rgba(0, 0, 0, 0.1);
+}
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.links a:hover {
+    color: var(--color-light-blue);
+    font-weight: bold;
+}
+
+main {
+    margin: 50px 10px;
+    text-align: center;
+}
+
+main img {
+    border-radius: 50%;   
+    border: 5px solid  var(--color-light-blue);
+    margin-bottom: 32px;
+    height: 350px;
+}
+
+main h1 {
+    font-size: 42px;
+    color: var( --color-light-blue);
+    line-height: 52px;
+    font-weight: 500;
+}
+
+main p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+main ul li {
+    font-size: 24px;
+    line-height: 34px;
+    display: inline;
+    margin: 0 8px;
+    color: var(--color-light-blue);
+}
+
+footer a {
+    border-bottom: 3px solid var(--color-blue);   
+}
+
+/*=== CARDS ===*/
+#wrapper h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.cards {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--color-black);
+    border: 1px solid var(--color-black);
+    border-radius: 30px;
+    width: 300px;   
+    margin-bottom: 50px; 
+    opacity: 0.8;
+}
+
+.card:hover {
+    transition: color 300ms;
+    border: 1px solid rgb(228, 228, 35, 0.6);
+    opacity: 1;
+}
+
+.card_image-container {
+    width: 95%;
+}
+
+#starter img {
+    padding: 40px 10px 10px 80px
+}
+
+#launchbase img {
+    padding: 40px 10px 8px 30px
+}
+
+#gostack img {
+    padding: 40px 10px 10px 70px
+}
+
+.card_content {
+    line-height: 26px;
+    padding: 34px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 34px;
+}
+
+.card_price {
+    background-color: var(--color-blue);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*=== MODAL ===*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*=== MODAL.ACTIVE ===*/
+
+.modal-overlay.maximize {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 6%;
+}

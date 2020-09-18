@@ -1,0 +1,231 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+:root {
+  --img-title-color: #111111;
+  --img-autor-color: #777777;
+  --footer-title-color: #999999;
+  --about-text-color: #444444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 0;
+  padding: 30px 231px;
+}
+
+header nav {
+  display: table;
+}
+
+header nav img {
+  margin-right: 122.4px;
+}
+
+header nav a {
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 30px;
+}
+
+.top-box {
+  width: 940px;
+  height: 366px;
+  background-color: #fbdfdb;
+  border-radius: 30px;
+  margin: 0 230px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.top-box-content {
+  margin: 70px 20px 20px 50px;
+  padding: 60px 5px;
+}
+
+.top-box h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.top-box p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  opacity: 0.7;
+  width: 316px;
+  height: 84px;
+}
+
+.top-box-img {
+  margin: 50px 0 0 150px;
+  padding-top: 16px;
+}
+
+.cards-title {
+  margin: 50px 230px 20px 230px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 940px;
+  margin: 0 230px;
+}
+
+.card {
+  width: 300px;
+  height: 232px;
+}
+
+.card_image-container img {
+  height: 140px;
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card_content {
+  margin-bottom: 5px;
+}
+
+.card_content p {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--img-title-color);
+}
+
+.card_info p {
+  font-size: 14px;
+  color: var(--img-autor-color);
+}
+
+.footer-box {
+  margin-top: 50px;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+}
+
+footer {
+  padding: 23px 0;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-box footer p {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--footer-title-color);
+}
+
+/* SOBRE */
+
+.main-container {
+  width: 940px;
+  height: 820px;
+  margin: 0 230px;
+}
+
+.about-title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.p-part1,
+.p-part2 {
+  margin-bottom: 30px;
+}
+
+.p-part1,
+.p-part2,
+.p-part3 p {
+  color: var(--about-text-color);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.second-title,
+.third-title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+/*=== MODAL ===*/
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 660px;
+  height: 413px;
+  right: 320px;
+  margin: 25vh auto;
+  border-radius: 20px;
+}
+
+/*=== MODAL.ACTIVE ===*/
+
+.modal-overlay.active {
+  visibility: visible;
+}
+
+.modal-overlay.active .modal-img img {
+  border-radius: 15px;
+  width: 600px;
+  height: 200px;
+  margin: 30px 30px 20px 30px;
+}
+
+.modal-overlay.active .modal-content p {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--img-title-color);
+}
+
+.modal-overlay.active .modal-info p {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--img-autor-color);
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+
+.modal-overlay.active .close-modal {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--footer-title-color);
+  cursor: pointer;
+  width: 98px;
+  height: 19px;
+  margin: 0 auto;
+}
